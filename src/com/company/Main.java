@@ -223,7 +223,7 @@ public class Main {
             if(unShiftedList[i] != 0){
                 unShiftedList[i] -= shiftValue;
             }
-            if(unShiftedList[i] < 0 ){
+            if(unShiftedList[i] <= 0 ){
                 unShiftedList[i] += 29;
             }
         }

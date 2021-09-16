@@ -220,11 +220,12 @@ public class Main {
         // Ændrer shiftedList til unShiftedList bare får klargørelse af hvad der bliver returneret
         int[] unShiftedList = shiftedList;
         for (int i = 0; i < unShiftedList.length; i++) {
-            if(unShiftedList[i] != 0){
+            if(unShiftedList[i] != 0) {
                 unShiftedList[i] -= shiftValue;
-            }
-            if(unShiftedList[i] <= 0 ){
-                unShiftedList[i] += 29;
+
+                if (unShiftedList[i] <= 0) {
+                    unShiftedList[i] += 29;
+                }
             }
         }
         return unShiftedList;
